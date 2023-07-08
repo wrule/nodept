@@ -1,0 +1,13 @@
+{
+  "name": "nodept",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/wrule/nodept.git",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@types/node": "18.16.1",
+    "global-agent": "3.0.0",
+    "typescript": "5.1.6"
+  }
+}

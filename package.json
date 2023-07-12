@@ -8,7 +8,6 @@
     "dev": "node dist/index.js",
     "patch": "./patch.sh"
   },
-  "repository": "https://github.com/wrule/nodept.git",
   "license": "MIT",
   "private": false,
   "dependencies": {

@@ -13,7 +13,6 @@ if (!fs.readFileSync('package.json', 'utf8').includes('nodept')) {
   console.log('project has been created');
   return;
 }
-child_process.execSync('npm install');
 const name = process.argv[process.argv.length - 1];
 console.log(name);
 replace('package.json', /nodept/g, name);

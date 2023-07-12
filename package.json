@@ -5,7 +5,8 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "dev": "node dist/index.js"
+    "dev": "node dist/index.js",
+    "patch": "./patch.sh"
   },
   "repository": "https://github.com/wrule/nodept.git",
   "license": "MIT",

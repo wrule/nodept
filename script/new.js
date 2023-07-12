@@ -11,5 +11,6 @@ function replace(filepath, search, replace) {
 const name = process.argv[process.argv.length - 1];
 console.log(name);
 replace('package.json', /nodept/g, name);
+replace('package.json', /"version": "(\d+|\.)+"/, '"version": "0.1.0"');
 replace('package-lock.json', /nodept/g, name);
 replace('README.md', /nodept/g, name);

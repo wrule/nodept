@@ -9,7 +9,7 @@ function replace(filepath, search, replace) {
   );
 }
 
-if (!fs.readFileSync(filepath, 'utf8').includes('nodept')) {
+if (!fs.readFileSync('package.json', 'utf8').includes('nodept')) {
   console.log('project has been created');
   return;
 }

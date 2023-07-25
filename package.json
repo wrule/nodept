@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
+    "pack": "script/pack.sh",
     "watch": "tsc --watch",
     "dev": "node dist/dev.js",
     "new": "ts-node script/new.ts",

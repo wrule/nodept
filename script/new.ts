@@ -1,7 +1,7 @@
 import fs from 'fs';
 import child_process from 'child_process';
 
-function replace(filepath, search, replace) {
+function replace(filepath: string, search: any, replace: string) {
   fs.writeFileSync(
     filepath,
     fs.readFileSync(filepath, 'utf8').replace(search, replace),

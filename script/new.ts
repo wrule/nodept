@@ -1,5 +1,5 @@
-const fs = require('fs');
-const child_process = require('child_process');
+import fs from 'fs';
+import child_process from 'child_process';
 
 function replace(filepath, search, replace) {
   fs.writeFileSync(
@@ -11,7 +11,7 @@ function replace(filepath, search, replace) {
 
 if (!fs.readFileSync('package.json', 'utf8').includes('nodept')) {
   console.log('project has been created');
-  return;
+  process.exit(0);
 }
 const name = process.argv[process.argv.length - 1];
 console.log(name);

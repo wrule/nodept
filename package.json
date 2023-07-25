@@ -6,7 +6,7 @@
     "build": "tsc",
     "watch": "tsc --watch",
     "dev": "node dist/index.js",
-    "new": "node script/new.js",
+    "new": "ts-node script/new.ts",
     "patch": "script/patch.sh"
   },
   "license": "MIT",

@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "private": false,
-  "dependencies": {
+  "devDependencies": {
     "@types/node": "18.16.1",
     "dayjs": "1.11.9",
     "global-agent": "3.0.0",

@@ -1,4 +1,12 @@
 import http from 'http';
+import './JSON-js/cycle.js';
+
+declare global {
+  interface JSON {
+    decycle(value: any, replacer?: (value: any) => any): any;
+    retrocycle(value: any): any;
+  }
+}
 
 export
 function hello() {

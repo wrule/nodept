@@ -10,11 +10,14 @@ declare global {
 
 export
 function hello() {
-  traverse(http, (key, value) => {
-    console.log(key, value);
-    return value;
-  })
   console.log('hello world!');
+  let a: any = {
+    c: {
+
+    }
+  };
+  a.c.b = a.c;
+  console.log(JSON.retrocycle(JSON.retrocycle((JSON.decycle(a)))));
 }
 
 export

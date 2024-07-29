@@ -115,6 +115,7 @@ if (typeof JSON.decycle !== "function") {
 if (typeof JSON.retrocycle !== "function") {
     JSON.retrocycle = function retrocycle($) {
         "use strict";
+        $ = JSON.decycle($);
 
 // Restore an object that was reduced by decycle. Members whose values are
 // objects of the form

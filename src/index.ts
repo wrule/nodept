@@ -17,7 +17,7 @@ function hello() {
     }
   };
   a.c.b = a.c;
-  console.log(JSON.retrocycle(JSON.retrocycle((JSON.decycle(a)))));
+  console.log(JSON.retrocycle(JSON.retrocycle((JSON.decycle(http)))));
 }
 
 export
